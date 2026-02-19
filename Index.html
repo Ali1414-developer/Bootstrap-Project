@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaTech - Modern Web</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: white;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-weight: 700;
+}
+
+.hero img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* CARDS */
+.service-card {
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #1cc88a, #4e73df);
+    color: white;
+    padding: 60px 0;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px 0;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR (container-fluid) ================= -->
+<div class="container-fluid fixed-top bg-white shadow-sm">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand fw-bold text-primary" href="#">NovaTech</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary ms-3" onclick="contactAlert()">Contact</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- ================= HERO (container-xxl) ================= -->
+<div class="container-xxl hero mt-5">
+    <div class="row align-items-center">
+        
+        <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4">Build Powerful Digital Products</h1>
+            <p class="lead mt-3">We create stunning, scalable and intelligent solutions for modern businesses.</p>
+            <button class="btn btn-light btn-lg mt-4">Get Started</button>
+        </div>
+
+        <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <img src="https://picsum.photos/500/400" class="img-fluid rounded-4 shadow">
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= SERVICES (container) ================= -->
+<div id="services" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold">Our Services</h2>
+
+    <div class="row g-4">
+
+        <!-- GRID SYSTEM -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card service-card shadow p-4 text-center">
+                <h4>Web Development</h4>
+                <p>Modern, responsive and fast websites using latest technologies.</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card service-card shadow p-4 text-center">
+                <h4>Mobile Apps</h4>
+                <p>Cross-platform mobile applications built for performance.</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card service-card shadow p-4 text-center">
+                <h4>AI Solutions</h4>
+                <p>Smart AI systems that automate and optimize business operations.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= ABOUT (container-fluid) ================= -->
+<div id="about" class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://picsum.photos/500/350" class="img-fluid rounded-4 shadow">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="fw-bold">Why Choose Us?</h2>
+                <p>We combine innovation, creativity, and technical expertise to deliver outstanding results for our clients worldwide.</p>
+                <button class="btn btn-primary mt-3">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= CTA (container-fluid) ================= -->
+<div class="container-fluid cta text-center">
+    <div class="container">
+        <h2 class="fw-bold">Ready to Start Your Project?</h2>
+        <button class="btn btn-light btn-lg mt-3">Contact Us</button>
+    </div>
+</div>
+
+<!-- ================= FOOTER (container-fluid) ================= -->
+<div class="container-fluid footer text-center">
+    <div class="container">
+        <p>© 2026 NovaTech. All Rights Reserved.</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function contactAlert(){
+    alert("Thanks for reaching out! We will contact you soon.");
+}
+</script>
+
+</body>
+</html>
