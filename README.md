@@ -20,7 +20,7 @@ Google Fonts (Poppins)
 Home Section UI
 ![Project UI](Screenshots/Home.png)
 About Section UI
-![Project UI](Screenshots/Services.png)
+![Project UI](Screenshots/About.png)
 Services Section
 ![Project UI](Screenshots/Services.png)
 
