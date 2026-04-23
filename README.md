@@ -17,6 +17,7 @@ JavaScript
 Bootstrap 5
 
 Google Fonts (Poppins)
+![Project UI](Screenshots/Home.png)
 
 📌 Key Features
 
